@@ -221,6 +221,8 @@ public class LogIn extends AppCompatActivity {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("Msg", "signInWithCredential:success");
                             FirebaseUser user = firebaseAuth.getCurrentUser();
+                            Toast.makeText(LogIn.this,"Log in successful",Toast.LENGTH_LONG).show();;
+                            startActivity(new Intent(LogIn.this,MainActivity.class));
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("Msh", "signInWithCredential:failure", task.getException());
