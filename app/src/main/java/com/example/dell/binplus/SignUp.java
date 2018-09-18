@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignUp extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword,confirmPassword;
-    private Button btnSignIn, btnSignUp, btnResetPassword;
+    private Button btnSignIn, btnSignUp;
     private ProgressBar progressBar;
     private FirebaseAuth auth;
 
@@ -37,14 +38,14 @@ public class SignUp extends AppCompatActivity {
         inputPassword = findViewById(R.id.password1);
         confirmPassword = findViewById(R.id.password2);
         progressBar = findViewById(R.id.progressBar);
-        btnResetPassword = findViewById(R.id.btn_reset_password);
+//        btnResetPassword = findViewById(R.id.btn_reset_password);
 
-        btnResetPassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SignUp.this, ResetPasswrodActivity.class));
-            }
-        });
+//        btnResetPassword.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(SignUp.this, ResetPasswrodActivity.class));
+//            }
+//        });
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +80,9 @@ public class SignUp extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
                 //create user
 
-                if (password1 == password2){
+                Log.i("Password",password1 + "  " + password2);
+
+                if (password1.equals(password2)){
                     auth.createUserWithEmailAndPassword(email, password1)
                             .addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
                                 @Override

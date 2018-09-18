@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#0D47A1">
+    android:background="#FFF">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -37,7 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_email"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/darkgray"
+            android:textColor="@android:color/black"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true" />
@@ -47,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_new_email"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/darkgray"
+            android:textColor="@android:color/black"
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true" />
@@ -58,7 +60,8 @@
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
             android:hint="@string/prompt_password"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/darkgray"
+            android:textColor="@android:color/black"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -70,7 +73,8 @@
             android:layout_height="wrap_content"
             android:focusableInTouchMode="true"
             android:hint="@string/new_pass"
-            android:textColorHint="@android:color/white"
+            android:textColorHint="@color/darkgray"
+            android:textColor="@android:color/black"
             android:imeOptions="actionUnspecified"
             android:inputType="textPassword"
             android:maxLines="1"
@@ -82,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
             android:text="@string/btn_change"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -93,7 +97,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
             android:text="@string/btn_change"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -104,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
             android:text="@string/btn_send"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -121,7 +125,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorPrimaryDark"
+            android:background="@drawable/mybutton"
             android:text="@string/btn_remove"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
@@ -134,7 +138,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/change_email"
             android:textStyle="bold"
-            android:background="#1565C0"
+            android:background="@drawable/mybutton"
             android:textColor="@android:color/white"/>
 
         <android.support.v7.widget.AppCompatButton
@@ -145,7 +149,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/change_password"
             android:textStyle="bold"
-            android:background="#1565C0"
+            android:background="@drawable/mybutton"
             android:textColor="@android:color/white" />
 
         <android.support.v7.widget.AppCompatButton
@@ -156,7 +160,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/send_password_reset_email"
             android:textStyle="bold"
-            android:background="#1565C0"
+            android:background="@drawable/mybutton"
             android:textColor="@android:color/white" />
 
         <android.support.v7.widget.AppCompatButton
@@ -167,7 +171,7 @@
             android:layout_marginTop="16dp"
             android:text="@string/remove_user"
             android:textStyle="bold"
-            android:background="#1565C0"
+            android:background="@drawable/mybutton"
             android:textColor="@android:color/white" />
 
         <android.support.v7.widget.AppCompatButton
@@ -176,9 +180,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:background="@color/colorAccent"
+            android:background="@drawable/mybutton"
             android:text="@string/btn_sign_out"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <TextView

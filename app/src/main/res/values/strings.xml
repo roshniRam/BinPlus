@@ -29,4 +29,5 @@
     <string name="lbl_forgot_password">Forgot password?</string>
     <string name="forgot_password_msg">Enter your email for password reset instructions.</string>
     <string name="prompt_password">Password</string>
+    <string name="web_client_id">640639364122-75im64c2c4jdtavk44vr8iktq6r8dbp1.apps.googleusercontent.com</string>
 </resources>
